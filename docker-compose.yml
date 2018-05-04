@@ -1,0 +1,17 @@
+version: '2'
+services:
+  wordpress:
+    image: baseboxorg/knc-ieo-smart-contracts
+    depends_on:
+      - testrpc
+    networks:
+      - ieo-network
+  testrpc:
+    image: baseboxorg/testrpc
+    ports:
+      - 127.0.0.1:8545:8545
+    networks:
+      - ieo-network
+networks:
+  ieo-network:
+      driver: bridge
