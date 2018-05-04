@@ -11,16 +11,14 @@ RUN apk add --no-cache \
       libssl1.0 \
       pkgconfig \
       openssl \
-      bash \
-      python 
+      bash
 
 ADD . /ieo-smart-contracts
 
 WORKDIR /ieo-smart-contracts
 
-RUN npm install -g ethereumjs-testrpc truffle
-#RUN npm install bignumber.js
+RUN npm install -g truffle
 
 RUN npm install
-#RUN testrpc
+
 RUN ./node_modules/.bin/truffle test
