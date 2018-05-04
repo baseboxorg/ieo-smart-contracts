@@ -11,6 +11,7 @@ RUN apk add --no-cache \
       libssl1.0 \
       pkgconfig \
       openssl \
+      bash \
       python
 
 ADD . /ieo-smart-contracts
