@@ -22,5 +22,5 @@ RUN npm install -g ethereumjs-testrpc truffle
 #RUN npm install bignumber.js
 
 RUN npm install
-RUN testrpc
+#RUN testrpc
 RUN ./node_modules/.bin/truffle test
