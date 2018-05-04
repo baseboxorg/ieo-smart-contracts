@@ -22,5 +22,4 @@ RUN npm install -g truffle
 
 RUN npm install
 
-EXPOSE 8545
-ENTRYPOINT ["./node_modules/.bin/truffle", "test"]
+CMD ["./node_modules/.bin/truffle", "test"]
