@@ -1,6 +1,6 @@
 version: '2'
 services:
-  wordpress:
+  ieo-smart-contracts:
     image: baseboxorg/knc-ieo-smart-contracts
     depends_on:
       - testrpc
