@@ -12,7 +12,7 @@ RUN apk add --no-cache \
       pkgconfig \
       openssl
 
-ADD . /ieo-mart-contracts
+ADD . /ieo-smart-contracts
 
 WORKDIR /ieo-smart-contracts
 
