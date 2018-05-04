@@ -23,7 +23,4 @@ RUN npm install -g truffle
 RUN npm install
 
 EXPOSE 8545
-
-RUN ./node_modules/.bin/truffle test
-
-#ENTRYPOINT ["./node_modules/.bin/truffle", "test"]
+ENTRYPOINT ["./node_modules/.bin/truffle", "test"]
